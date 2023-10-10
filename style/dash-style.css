@@ -1,0 +1,126 @@
+/* main-style */
+body {
+    background-color: #eee !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar {
+        position: static !important;
+        height: auto !important;
+    }
+    .navigation {
+        position: static !important;
+        margin-top: -16px !important;
+    }
+}
+/* end of main-style */
+
+/* navigation */
+
+/* sidebar */
+
+.username {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 12px 0px;
+}
+
+.sidebar {
+    background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.8)) , url(../images/sidebar-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.sidebar li {
+    margin: 10px 3px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar li a {
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar li a i {
+    margin-left: 5px;
+}
+
+.li-active {
+    background-color: #e84118;
+    transition: .4s;
+}
+
+.li-active:hover {
+    background-color: #F66436;
+    transform: translateX(-10px);
+}
+
+.li-normal {
+    transition: .4s;
+}
+
+.li-normal:hover {
+    background-color: #ffffff59;
+    transform: translateX(-10px);
+}
+
+/* end of sidebar */
+
+/* navbar */
+
+.navigation {
+    background-color: #212529;
+    width: 100%;
+    min-height: 4vh;
+    padding: 5px;
+}
+
+.form-group i {
+    color: #e84118;
+}
+
+.form-group .search-input {
+    width: 450px;
+    padding: 7px 5px;
+    background: transparent;
+    border: 0;
+    margin-right: 5px;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: white;
+    transition: .4s;
+}
+
+.form-group .search-input:focus {
+    border-bottom: 2px solid #e84118;
+}
+
+/* end of navbar */
+
+/* end of navigation */
+
+/* main */
+
+/* cards */
+.card-anim {
+    transition: all .4s;
+}
+
+.card-anim:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px,2px,5px !important;
+}
+
+
+
+/* end of cards */
+
+/* end of main */
